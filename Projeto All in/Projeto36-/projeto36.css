@@ -1,0 +1,86 @@
+body {
+    background-color: #2d2c2c;
+}
+
+.sec-geral, .sec-geral02 {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em;
+}
+
+h1 {
+    margin: .2em;
+    color: #fff;
+    
+}
+
+.div-cabecario {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-reset {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+button {
+    border-radius: 10px;
+    background-color: #2d2c2c;
+    color: #fff;
+}
+
+
+.div-01, .div-02, .div-03, .div-04, .div-05, .div-06, .div-07, .div-08 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #6a6767;
+    box-shadow: 2px 2px 2px 2px;
+    width: 250px;
+    height: 300px;
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+
+@keyframes rotateAnimation {
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(360deg)}
+}
+
+
+
+
+
+@keyframes deslocation {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateY(50px);
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+ 
+    .sec-geral, .sec-geral02 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+}
+
+
+
+
