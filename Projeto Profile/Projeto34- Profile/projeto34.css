@@ -1,0 +1,74 @@
+body {
+    background-color: #525254;
+}
+
+.section-01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#232424, #778ae9);
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    margin-top: 5rem;
+    box-shadow: 2px 2px 5px 5px rgb(22, 32, 32);
+
+}
+
+.div-links {
+    font-family: arial;
+    display: flex;
+    justify-content: center;
+    animation: beat 4s ease-in-out infinite;
+}
+
+a {
+    text-decoration: none;
+    padding: 1em;
+    color: #fff;
+}
+
+@keyframes beat {
+    20% {
+        transform: scale(1.2);
+    }
+}
+
+.div01-name {
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+#btn {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width: auto;
+    height: 30px;
+    font-size: large;
+    color: #ebe0e0;
+    background-color: #0e1110;
+    box-shadow: 3px 3px 3px 3px #00000071;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.cursor {
+    position: relative;
+    width: 8%;
+}
+
+#result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .section-01 {
+        width: auto;
+    }
+}
