@@ -1,0 +1,47 @@
+
+body {
+    background-color: #503e3e;
+    display: flex;
+    justify-content: center;
+    margin: 3em;
+}
+
+h1 {
+    color: #fff;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 5px solid #926d6d;
+    width: 50%;
+    height: 50vh;
+}
+
+input {
+    border-radius: 5px;
+    background-color: aqua;
+}
+
+button {
+    border-radius: 5px;
+}
+
+.div-input {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 2em;
+    
+}
+
+#result {
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+

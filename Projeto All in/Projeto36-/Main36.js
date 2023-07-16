@@ -9,6 +9,9 @@ function card01() {
     let minutos = date.getMinutes()
     let segundos = date.getSeconds()
 
+
+    segundos = segundos.toString().padStart(2 , '0')
+
     document.querySelector('.div-01').innerHTML = horas + ":" + minutos + ":" + segundos
     card00.style.color = 'black'
     card00.style.fontSize = '50px'
@@ -282,12 +285,7 @@ function card04() {
 
         }
 
-       
-
     }
-
-   
-
 
 }
 
@@ -300,9 +298,9 @@ function card05() {
 
     let imagem05 = document.createElement('img')
 
-    imagem05.src = 'imgproj5.png'
+    imagem05.src = 'jj.png'
     imagem05.classList.add('imagem05')
-    imagem05.style.animation = 'rotateAnimation 3s infinite'
+    imagem05.style.animation = 'rotateAnimation 10s infinite'
     card05.style.pointerEvents = 'none'
 
 
@@ -318,6 +316,122 @@ function card06() {
 
     card06.style.animation = 'deslocation 1s forwards'
     card06.style.color = 'black'
+
+    if(!card06.querySelector('.btn-container')) {
+
+        let btnContainer = document.createElement('div')
+        btnContainer.classList.add('btn-container')
+        btnContainer.style.display = 'flex'
+        btnContainer.style.flexDirection = 'row'
+        btnContainer.style.margin = '10px'
+
+        let btnContainer2 = document.createElement('div')
+        btnContainer2.classList.add('btn-container')
+        btnContainer2.style.display = 'flex'
+        btnContainer2.style.flexDirection = 'row'
+        btnContainer2.style.margin = '5px'
+
+        let btnContainer3 = document.createElement('div')
+        btnContainer3.classList.add('btn-container')
+        btnContainer3.style.display = 'flex'
+        btnContainer3.style.flexDirection = 'row'
+        btnContainer3.style.margin = '5px'
+
+    let div01 = document.createElement('div')
+    div01.style.border = '2px solid #fff'
+    div01.style.width = '30px'
+    div01.style.height = '30px'
+    div01.style.margin = '10px'
+    div01.style.textAlign = 'center'
+    div01.style.lineHeight = '30px'
+
+    div01.addEventListener('click', function() {
+       if (this.textContent === 'X')  {
+            this.textContent = 'O'
+        } else {
+            this.textContent = 'X'
+        }
+    }) 
+    btnContainer.appendChild(div01)
+    card06.appendChild(btnContainer)
+
+    let div02 = document.createElement('div')
+    div02.style.border = '2px solid #fff'
+    div02.style.width = '30px'
+    div02.style.height = '30px'
+    div02.style.margin = '10px'
+    btnContainer.appendChild(div02)
+    card06.appendChild(btnContainer)
+
+    let div03 = document.createElement('div')
+    div03.style.border = '2px solid #fff'
+    div03.style.width = '30px'
+    div03.style.height = '30px'
+    div03.style.margin = '10px'
+    btnContainer.appendChild(div03)
+    card06.appendChild(btnContainer)
+
+    // segunda linha
+
+    let div04 = document.createElement('div')
+    div04.style.border = '2px solid #fff'
+    div04.style.width = '30px'
+    div04.style.height = '30px'
+    div04.style.margin = '10px'
+    btnContainer2.appendChild(div04)
+    card06.appendChild(btnContainer2)
+
+    let div05 = document.createElement('div')
+    div05.style.border = '2px solid #fff'
+    div05.style.width = '30px'
+    div05.style.height = '30px'
+    div05.style.margin = '10px'
+    btnContainer2.appendChild(div05)
+    card06.appendChild(btnContainer2)
+
+    let div06 = document.createElement('div')
+    div06.style.border = '2px solid #fff'
+    div06.style.width = '30px'
+    div06.style.height = '30px'
+    div06.style.margin = '10px'
+    btnContainer2.appendChild(div06)
+    card06.appendChild(btnContainer2)
+
+    // terceira linha
+
+    let div07 = document.createElement('div')
+    div07.style.border = '2px solid #fff'
+    div07.style.width = '30px'
+    div07.style.height = '30px'
+    div07.style.margin = '10px'
+    btnContainer3.appendChild(div07)
+    card06.appendChild(btnContainer3)
+
+    let div08 = document.createElement('div')
+    div08.style.border = '2px solid #fff'
+    div08.style.width = '30px'
+    div08.style.height = '30px'
+    div08.style.margin = '10px'
+    btnContainer3.appendChild(div08)
+    card06.appendChild(btnContainer3)
+
+    let div09 = document.createElement('div')
+    div09.style.border = '2px solid #fff'
+    div09.style.width = '30px'
+    div09.style.height = '30px'
+    div09.style.margin = '10px'
+    btnContainer3.appendChild(div09)
+    card06.appendChild(btnContainer3)
+
+
+    }
+
+    
+    
+
+
+
+
 }
 
 
